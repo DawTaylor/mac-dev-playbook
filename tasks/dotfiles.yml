@@ -7,5 +7,8 @@
     accept_hostkey: "{{ dotfiles_repo_accept_hostkey }}"
   become: false
 
+- name: Pull changes from the remote
+  command: "cd {{ dotfiles_repo_local_destination }} && git pull origin"
+
 - name: Link dotfiles using stow
   command: "cd {{ dotfiles_repo_local_destination }} && stow --adopt . && git restore . && stow --restow ."
