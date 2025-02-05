@@ -1,0 +1,8 @@
+---  
+- name: Test if N is available
+  command: which n
+  register: n_path
+
+- name: Store N path if present
+  set_fact:
+    is_n_present: "{{ n_path.rc == 0 }}"
