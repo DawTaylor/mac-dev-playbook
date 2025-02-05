@@ -82,7 +82,7 @@ homebrew_cask_apps:
   - insomnia
   - iterm2
   - kitty
-  - logi-options\+
+  - "logi-options+"
   - nordvpn
   - notion
   - parsec
