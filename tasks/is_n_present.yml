@@ -2,7 +2,9 @@
 - name: Test if N is available
   command: which n
   register: n_path
+  ignore_errors: true
 
 - name: Store N path if present
   set_fact:
-    is_n_present: "{{ n_path.rc == 0 }}"
+    n_bin_path: "{{ n_path.stdout }}"
+  when: n_path.rc == 0
