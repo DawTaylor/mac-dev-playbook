@@ -8,6 +8,6 @@
   become: false
 
 - name: Link dotfiles using stow
-  command: "stow --adopt . && git restore . && stow --restow ."
+  shell: "stow --adopt . && git restore . && stow --restow ."
   args:
     chdir: "{{ dotfiles_repo_local_destination }}"
