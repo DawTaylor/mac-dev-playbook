@@ -82,7 +82,7 @@ homebrew_cask_apps:
   - insomnia
   - iterm2
   - kitty
-  - "logi-options+"
+  # - "logi-options+"
   - nordvpn
   - notion
   - parsec
@@ -100,9 +100,9 @@ homebrew_cask_apps:
   - 1password
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps:
-  - { id: 1191449274, name: "Tooth Fairy" }
-  - { id: 441258766, name: "Magnet" }
+mas_installed_apps: []
+  # - { id: 1191449274, name: "Tooth Fairy" }
+  # - { id: 441258766, name: "Magnet" }
 mas_email: ""
 mas_password: ""
 
