@@ -11,6 +11,7 @@
       with_fileglob:
         - "{{ playbook_dir }}/config.yml"
       tags: ["always"]
+    - import_tasks: tasks/is_n_present.yml
 
   roles:
     - role: elliotweiser.osx-command-line-tools
@@ -27,9 +28,6 @@
       tags: ["dock"]
 
   tasks:
-    - import_tasks: tasks/script-packages.yml
-      tags: ["script-packages"]
-
     - import_tasks: tasks/sudoers.yml
       when: configure_sudoers
       tags: ["sudoers"]
