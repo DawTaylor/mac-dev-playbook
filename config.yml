@@ -1,0 +1,142 @@
+---
+configure_dotfiles: true
+configure_terminal: true
+configure_osx: true
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: true
+dockutil_install: true
+dockitems_remove:
+  - Launchpad
+  - Mensagens
+  - Mail
+  - Mapas
+  - Fotos
+  - FaceTime
+  - Calendário
+  - Contatos
+  - Lembretes
+  - Notas
+  - Freeform
+  - TV
+  - Música
+  - "App Store"
+dockitems_persist:
+  - name: Firefox
+    path: "/Applications/Firefox.app/"
+    pos: 2
+  - name: Slack
+    path: "/Applications/Slack.app/"
+    pos: 3
+  - name: Notion
+    path: "/Applications/Notion.app/"
+    pos: 4
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app/"
+    pos: 5
+
+configure_sudoers: false
+sudoers_custom_config: ''
+# Example:
+# sudoers_custom_config: |
+#   # Allow users in admin group to use sudo with no password.
+#   %admin ALL=(ALL) NOPASSWD: ALL
+
+dotfiles_repo: https://github.com/DawTaylor/dotfiles
+dotfiles_repo_version: master
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/dotfiles
+dotfiles_source:
+  - .zshrc
+
+homebrew_uninstalled_packages:
+  - node
+
+homebrew_installed_packages:
+  - awscli
+  - bat
+  - circleci
+  - eza
+  - jq
+  - { name: n, install_options: "ignore-dependencies" }
+  - neovim
+  - oh-my-posh
+  - pnpm
+  - sqlite
+  - stow
+  - terraform
+  - zsh
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting
+
+homebrew_taps: []
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - airbuddy
+  - balenaetcher
+  - chatgpt
+  - choosy
+  - discord
+  - docker
+  - firefox
+  - font-jetbrains-mono-nerd-font
+  - insomnia
+  - iterm2
+  - kitty
+  - logi-options-plus
+  - nordvpn
+  - notion
+  - parsec
+  - postman
+  - prusaslicer
+  - raycast
+  - slack
+  - superslicer
+  - telegram
+  - temurin
+  - tg-pro
+  - visual-studio-code
+  - utm
+  - whatsapp
+  - 1password
+  - 1password-cli
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps: []
+  # - { id: 1191449274, name: "Tooth Fairy" }
+  # - { id: 441258766, name: "Magnet" }
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: []
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages:
+  - name: "@aws-amplify/cli"
+  - name: http-server
+  - name: yarn
+  - name: lerna
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages: []
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+
+# Set to 'true' to configure Sublime Text.
+configure_sublime: false
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
