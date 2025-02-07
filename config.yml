@@ -56,9 +56,8 @@ homebrew_installed_packages:
   - circleci
   - eza
   - jq
-  - n
+  - { name: n, install_options: "ignore-dependencies" }
   - neovim
-  - { name: node, when: not is_n_present }
   - oh-my-posh
   - pnpm
   - sqlite
