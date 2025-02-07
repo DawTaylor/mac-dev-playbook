@@ -11,7 +11,6 @@
       with_fileglob:
         - "{{ playbook_dir }}/config.yml"
       tags: ["always"]
-    - import_tasks: tasks/is_n_present.yml
 
   roles:
     - role: elliotweiser.osx-command-line-tools
