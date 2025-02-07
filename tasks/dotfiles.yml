@@ -9,5 +9,8 @@
 
 - name: Link dotfiles using stow
   shell: "stow --adopt . && git restore . && stow --restow ."
-  args:
-    chdir: "{{ dotfiles_repo_local_destination }}"
+  working_dir: "{{ dotfiles_repo_local_destination }}"
+
+- name: Source files
+  shell: "source $HOME/{{ item }}"
+  loop: "{{ dotfiles_source }}"

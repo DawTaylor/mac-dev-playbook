@@ -46,6 +46,8 @@ dotfiles_repo: https://github.com/DawTaylor/dotfiles
 dotfiles_repo_version: master
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/dotfiles
+dotfiles_source:
+  - .zshrc
 
 homebrew_uninstalled_packages:
   - node
