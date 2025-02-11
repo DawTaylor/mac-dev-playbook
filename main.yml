@@ -27,6 +27,9 @@
       tags: ["dock"]
 
   tasks:
+    - name: Setup Node
+      ansible.builtin.command: n lts
+
     - import_tasks: tasks/sudoers.yml
       when: configure_sudoers
       tags: ["sudoers"]
