@@ -125,9 +125,13 @@ gem_packages: []
 #   version: "~> 1.15.1" # default: N/A
 npm_packages:
   - name: "@aws-amplify/cli"
+    executable: "pnpm"
   - name: http-server
+    executable: "pnpm"
   - name: yarn
+    executable: "pnpm"
   - name: lerna
+    executable: "pnpm"
 # - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
