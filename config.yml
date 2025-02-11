@@ -32,7 +32,7 @@ dockitems_persist:
     path: "/Applications/Notion.app/"
     pos: 4
   - name: "Ghostty"
-    path: "/Applications/Ghostty.app/
+    path: "/Applications/Ghostty.app/"
     pos: 5
 
 configure_sudoers: false
