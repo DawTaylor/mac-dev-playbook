@@ -34,7 +34,9 @@ dockitems_persist:
   - name: "Ghostty"
     path: "/Applications/Ghostty.app/"
     pos: 5
-
+  - name: "Ajustes do Sistema"
+    path: "/System/Applications/System%20Settings.app"
+    pos: 999
 configure_sudoers: false
 sudoers_custom_config: ''
 # Example:
