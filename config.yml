@@ -57,11 +57,12 @@ homebrew_installed_packages:
   - bat
   - circleci
   - eza
+  - fd
+  - fzf
   - jq
   - { name: n, install_options: "ignore-dependencies" }
   - neovim
   - oh-my-posh
-  - pnpm
   - sqlite
   - stow
   - terraform
@@ -78,14 +79,22 @@ homebrew_cask_apps:
   - balenaetcher
   - chatgpt
   - choosy
+  - db-browser-for-sqlite
   - discord
   - docker
   - firefox
   - font-jetbrains-mono-nerd-font
+  - font-hack-nerd-font
+  - font-inconsolata-nerd-font
+  - font-meslo-lg-nerd-font
+  - font-sauce-code-pro-nerd-font
+  - font-ubuntu-mono-nerd-font
+  - font-ubuntu-nerd-font
   - ghostty
   - insomnia
   - iterm2
   - logi-options-plus
+  - ngrok
   - nordvpn
   - notion
   - parsec
@@ -104,9 +113,9 @@ homebrew_cask_apps:
   - 1password-cli
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
-  # - { id: 1191449274, name: "Tooth Fairy" }
-  # - { id: 441258766, name: "Magnet" }
+mas_installed_apps:
+  - { id: 1191449274, name: "Tooth Fairy" }
+  - { id: 441258766, name: "Magnet" }
 mas_email: ""
 mas_password: ""
 
