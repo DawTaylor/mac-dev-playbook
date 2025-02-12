@@ -11,3 +11,6 @@
   shell: "stow --adopt . && git restore . && stow --restow ."
   args:
     chdir: "{{ dotfiles_repo_local_destination }}"
+
+- name: Source .zshrc file
+  shell: "source $HOME/.zshrc"
