@@ -15,7 +15,7 @@
     global: true
     executable: "{{ item.executable | default(omit) }}"
   environment:
-    PATH: "{{ ansible_env.HOME }}/Development/tools/n:{{ ansible_env.PATH }}"
+    PATH: "{{ ansible_env.HOME }}/Development/tools/n/bin:{{ ansible_env.PATH }}"
   loop: "{{ npm_packages }}"
 
 - name: Install global Pip packages.
