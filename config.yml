@@ -106,6 +106,7 @@ homebrew_cask_apps:
   - telegram
   - temurin
   - tg-pro
+  - tmux
   - visual-studio-code
   - utm
   - whatsapp
