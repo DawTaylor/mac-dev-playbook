@@ -68,8 +68,6 @@ homebrew_installed_packages:
   - terraform
   - tldr
   - zsh
-  - zsh-autosuggestions
-  - zsh-syntax-highlighting
 
 homebrew_taps: []
 
@@ -98,9 +96,11 @@ homebrew_cask_apps:
   - nordvpn
   - notion
   - parsec
+  - pgadmin4
   - postman
   - prusaslicer
   - raycast
+  - raspberry-pi-imager
   - slack
   - superslicer
   - telegram
@@ -110,6 +110,7 @@ homebrew_cask_apps:
   - visual-studio-code
   - utm
   - whatsapp
+  - zed
   - 1password
   - 1password-cli
 
