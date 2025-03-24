@@ -34,6 +34,9 @@ dockitems_persist:
   - name: "Ghostty"
     path: "/Applications/Ghostty.app/"
     pos: 5
+  - name: "Cursor"
+    path: "/Applications/Cursor.app/"
+    pos: 6
   - name: "Ajustes do Sistema"
     path: "/System/Applications/System%20Settings.app"
     pos: 999
