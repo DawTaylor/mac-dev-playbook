@@ -79,7 +79,7 @@ homebrew_cask_appdir: /Applications
 homebrew_uninstalled_cask_apps:
   - docker
 homebrew_cask_apps:
-  - aerospace
+  - nikitabobko/tap/aerospace
   - airbuddy
   - balenaetcher
   - chatgpt
