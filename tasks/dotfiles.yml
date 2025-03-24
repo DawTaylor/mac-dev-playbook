@@ -7,6 +7,16 @@
     accept_hostkey: "{{ dotfiles_repo_accept_hostkey }}"
   become: false
 
+- name: Ensure dotfiles repository is up to date
+  shell: "git pull"
+  args:
+    chdir: "{{ dotfiles_repo_local_destination }}"
+
+- name: Ensure stow is installed
+  package:
+    name: "stow"
+    state: "{{ stow_state }}"
+
 - name: Link dotfiles using stow
   shell: "stow --adopt . && git restore . && stow --restow ."
   args:
