@@ -64,23 +64,29 @@ homebrew_installed_packages:
   - { name: n, install_options: "ignore-dependencies" }
   - neovim
   - oh-my-posh
+  - podman
+  - podman-tui
   - sqlite
   - stow
   - terraform
-  - tldr
+  - tmux
+  - tlcr
   - zsh
 
 homebrew_taps: []
 
 homebrew_cask_appdir: /Applications
+homebrew_uninstalled_cask_apps:
+  - docker
 homebrew_cask_apps:
+  - aerospace
   - airbuddy
   - balenaetcher
   - chatgpt
   - choosy
+  - cursor
   - db-browser-for-sqlite
   - discord
-  - docker
   - firefox
   - font-jetbrains-mono-nerd-font
   - font-hack-nerd-font
@@ -107,7 +113,6 @@ homebrew_cask_apps:
   - telegram
   - temurin
   - tg-pro
-  - tmux
   - visual-studio-code
   - utm
   - whatsapp
@@ -136,10 +141,11 @@ gem_packages: []
 #   state: present # present/absent/latest, default: present
 #   version: "~> 1.15.1" # default: N/A
 npm_packages:
-  - "@aws-amplify/cli"
-  - http-server
+  - "@aws-amplify/cli@12.12.6"
+  - http-serve
   - yarn
   - lerna
+  - ts-node
 # - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
