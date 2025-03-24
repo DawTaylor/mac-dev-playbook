@@ -12,11 +12,6 @@
   args:
     chdir: "{{ dotfiles_repo_local_destination }}"
 
-- name: Ensure stow is installed
-  package:
-    name: "stow"
-    state: "{{ stow_state }}"
-
 - name: Link dotfiles using stow
   shell: "stow --adopt . && git restore . && stow --restow ."
   args:
