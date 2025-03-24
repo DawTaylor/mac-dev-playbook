@@ -8,14 +8,4 @@
     update: yes
     force: no
   loop: "{{ git_repositories }}"
-  # This will prevent the task from failing if a repository is temporarily unavailable
-  ignore_errors: yes
-
-# Example variables structure in your vars file or inventory:
-# git_repositories:
-#   - repo: https://github.com/example/repo1.git
-#     dest: /path/to/destination1
-#     version: main  # optional, defaults to main
-#   - repo: https://github.com/example/repo2.git
-#     dest: /path/to/destination2
-#     version: stable 
+  ignore_errors: true
