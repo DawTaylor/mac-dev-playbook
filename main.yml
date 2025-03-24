@@ -53,6 +53,9 @@
     - import_tasks: tasks/sublime-text.yml
       when: configure_sublime
       tags: ["sublime-text"]
+    - include_tasks: tasks/git_repos.yml
+      when: configure_git_repos
+      tags: ["git-repos"]
 
     - name: Run post-provision task files in a block.
       tags: ["post"]
