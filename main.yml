@@ -5,7 +5,6 @@
   vars_files:
     - default.config.yml
     - vault.yml
-    - repositories_list.yml
 
   pre_tasks:
     - name: Include playbook configuration.
@@ -54,9 +53,6 @@
     - import_tasks: tasks/sublime-text.yml
       when: configure_sublime
       tags: ["sublime-text"]
-    - include_tasks: tasks/git_repos.yml
-      when: configure_git_repos
-      tags: ["git-repos"]
 
     - name: Run post-provision task files in a block.
       tags: ["post"]

@@ -3,4 +3,3 @@
 .ansible
 *.retry
 roles*
-repositories_list.yml
