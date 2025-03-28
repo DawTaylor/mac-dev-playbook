@@ -12,6 +12,12 @@
   args:
     chdir: "{{ dotfiles_repo_local_destination }}"
 
+- name: Ensure .config directory exists in the $HOME directory
+  file:
+    path: $HOME/.config
+    state: directory
+    mode: '0755'
+
 - name: Link dotfiles using stow
   shell: "stow --adopt . && git restore . && stow --restow ."
   args:
