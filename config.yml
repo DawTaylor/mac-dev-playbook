@@ -70,6 +70,7 @@ homebrew_installed_packages:
   - oh-my-posh
   - podman
   - podman-tui
+  - FelixKratz/formulae/sketchybar
   - sqlite
   - stow
   - terraform
