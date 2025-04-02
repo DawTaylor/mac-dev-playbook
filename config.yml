@@ -65,6 +65,7 @@ homebrew_installed_packages:
   - fd
   - fzf
   - jq
+  - lazygit
   - { name: n, install_options: "ignore-dependencies" }
   - neovim
   - oh-my-posh
@@ -128,6 +129,7 @@ homebrew_cask_apps:
 mas_installed_apps:
   - { id: 1191449274, name: "Tooth Fairy" }
   - { id: 441258766, name: "Magnet" }
+  - { id: 1032605045, name: "Pacote Vício" }
 mas_email: ""
 mas_password: ""
 
