@@ -71,6 +71,7 @@ homebrew_installed_packages:
   - oh-my-posh
   - podman
   - podman-tui
+  - pyenv
   - FelixKratz/formulae/sketchybar
   - sqlite
   - stow
@@ -116,7 +117,7 @@ homebrew_cask_apps:
   - slack
   - superslicer
   - telegram
-  - temurin
+  - temurin@19
   - tg-pro
   - visual-studio-code
   - utm
@@ -147,7 +148,7 @@ gem_packages: []
 #   state: present # present/absent/latest, default: present
 #   version: "~> 1.15.1" # default: N/A
 npm_packages:
-  - "@aws-amplify/cli@12.12.6"
+  - "@aws-amplify/cli"
   - http-serve
   - yarn
   - lerna
@@ -155,7 +156,10 @@ npm_packages:
 # - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
-pip_packages: []
+pip_packages:
+  - pipenv
+  - venv
+  - virtualenv
 # - name: mkdocs
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A
