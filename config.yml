@@ -72,7 +72,6 @@ homebrew_installed_packages:
   - podman
   - podman-tui
   - pyenv
-  - FelixKratz/formulae/sketchybar
   - sqlite
   - stow
   - terraform
@@ -85,36 +84,38 @@ homebrew_cask_appdir: /Applications
 homebrew_uninstalled_cask_apps:
   - docker
 homebrew_cask_apps:
-  - nikitabobko/tap/aerospace
   - airbuddy
+  - applepi-baker
   - balenaetcher
+  - bambu-studio
   - chatgpt
   - choosy
   - cursor
   - db-browser-for-sqlite
   - discord
   - firefox
-  - font-jetbrains-mono-nerd-font
   - font-hack-nerd-font
   - font-inconsolata-nerd-font
+  - font-jetbrains-mono-nerd-font
   - font-meslo-lg-nerd-font
   - font-sauce-code-pro-nerd-font
+  - font-sf-pro
   - font-ubuntu-mono-nerd-font
   - font-ubuntu-nerd-font
   - ghostty
   - insomnia
   - iterm2
-  - logi-options-plus
   - ngrok
   - nordvpn
   - notion
-  - parsec
   - pgadmin4
+  - pocket-casts
   - postman
-  - prusaslicer
-  - raycast
   - raspberry-pi-imager
+  - raycast
+  - sf-symbols
   - slack
+  - steermouse
   - superslicer
   - telegram
   - temurin@19
@@ -122,7 +123,6 @@ homebrew_cask_apps:
   - visual-studio-code
   - utm
   - whatsapp
-  - zed
   - 1password
   - 1password-cli
 
@@ -130,9 +130,10 @@ homebrew_cask_apps:
 mas_installed_apps:
   - { id: 1191449274, name: "Tooth Fairy" }
   - { id: 441258766, name: "Magnet" }
-  - { id: 1032605045, name: "Pacote Vício" }
+  - { id: 1032605045, name: "PacoteVício" }
 mas_email: ""
 mas_password: ""
+mas_upgrade_all_apps: true
 
 osx_script: "~/.osx --no-restart"
 
@@ -156,10 +157,10 @@ npm_packages:
 # - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A
-pip_packages:
-  - pipenv
-  - venv
-  - virtualenv
+pip_packages: []
+  # - pipenv
+  # - venv
+  # - virtualenv
 # - name: mkdocs
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A
