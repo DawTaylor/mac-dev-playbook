@@ -7,6 +7,10 @@ configure_osx: true
 configure_dock: true
 dockutil_install: true
 dockitems_remove:
+  - Apps
+  - Telefone
+  - Jogos
+  - "Assistente de Feedback"
   - Launchpad
   - Mensagens
   - Mail
@@ -23,6 +27,9 @@ dockitems_remove:
   - "App Store"
   - "Espelhamento do iPhone"
 dockitems_persist:
+  - name: Safari
+    path: "/Applications/Safari.app"
+    pos: 1
   - name: Firefox
     path: "/Applications/Firefox.app/"
     pos: 2
