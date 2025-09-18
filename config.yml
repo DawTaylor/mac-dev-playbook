@@ -124,6 +124,7 @@ homebrew_cask_apps:
 mas_installed_apps:
   - { id: 1191449274, name: "Tooth Fairy" }
   - { id: 441258766, name: "Magnet" }
+  - { id: 1569813296, name: "1Password for Safari" }
 mas_email: ""
 mas_password: ""
 mas_upgrade_all_apps: true
