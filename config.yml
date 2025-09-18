@@ -99,6 +99,7 @@ homebrew_cask_apps:
   - font-jetbrains-mono-nerd-font
   - font-meslo-lg-nerd-font
   - font-sauce-code-pro-nerd-font
+  - font-sf-mono-nerd-font-ligaturized
   - font-sf-pro
   - font-ubuntu-mono-nerd-font
   - font-ubuntu-nerd-font
