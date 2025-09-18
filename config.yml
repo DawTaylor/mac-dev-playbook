@@ -35,8 +35,8 @@ dockitems_persist:
   - name: "Ghostty"
     path: "/Applications/Ghostty.app/"
     pos: 5
-  - name: "Cursor"
-    path: "/Applications/Cursor.app/"
+  - name: "VS Code"
+    path: "/Applications/Visual Studio Code.app/"
     pos: 6
   - name: "Ajustes do Sistema"
     path: "/System/Applications/System%20Settings.app"
@@ -58,41 +58,34 @@ homebrew_uninstalled_packages:
 
 homebrew_installed_packages:
   - awscli
-  - aws/tap/xray-daemon
   - bat
   - circleci
   - eza
   - fd
   - fzf
   - jq
-  - lazygit
   - { name: n, install_options: "ignore-dependencies" }
-  - neovim
-  - oh-my-posh
   - podman
   - podman-tui
   - pyenv
   - sqlite
   - stow
   - terraform
-  - tmux
   - tlrc
 
 homebrew_taps: []
 
 homebrew_cask_appdir: /Applications
-homebrew_uninstalled_cask_apps:
-  - docker
+homebrew_uninstalled_cask_apps: []
 homebrew_cask_apps:
+  - 1password
+  - 1password-cli
+  - alfred
   - airbuddy
-  - applepi-baker
-  - balenaetcher
   - bambu-studio
   - chatgpt
   - choosy
-  - cursor
   - db-browser-for-sqlite
-  - discord
   - firefox
   - font-hack-nerd-font
   - font-inconsolata-nerd-font
@@ -104,33 +97,26 @@ homebrew_cask_apps:
   - font-ubuntu-nerd-font
   - ghostty
   - insomnia
-  - iterm2
   - ngrok
   - nordvpn
   - notion
   - pgadmin4
   - pocket-casts
   - postman
-  - raspberry-pi-imager
-  - raycast
   - sf-symbols
   - slack
   - steermouse
-  - superslicer
   - telegram
   - temurin@19
   - tg-pro
   - visual-studio-code
-  - utm
   - whatsapp
-  - 1password
-  - 1password-cli
+  - yubico-authenticator
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
   - { id: 1191449274, name: "Tooth Fairy" }
   - { id: 441258766, name: "Magnet" }
-  - { id: 1032605045, name: "PacoteVício" }
 mas_email: ""
 mas_password: ""
 mas_upgrade_all_apps: true
@@ -150,6 +136,7 @@ gem_packages: []
 #   version: "~> 1.15.1" # default: N/A
 npm_packages:
   - "@aws-amplify/cli"
+  - corepack
   - http-serve
   - yarn
   - lerna
