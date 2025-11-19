@@ -60,9 +60,6 @@ dotfiles_repo_version: master
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/dotfiles
 
-homebrew_uninstalled_packages:
-  - node
-
 homebrew_installed_packages:
   - awscli
   - bat
@@ -70,8 +67,11 @@ homebrew_installed_packages:
   - eza
   - fd
   - fzf
+  - helm
   - jq
-  - { name: n, install_options: "ignore-dependencies" }
+  - kubernetes-cli
+  - minikube
+  - nvm
   - podman
   - podman-tui
   - pyenv
@@ -87,8 +87,8 @@ homebrew_uninstalled_cask_apps: []
 homebrew_cask_apps:
   - 1password
   - 1password-cli
-  - alfred
   - airbuddy
+  - android-platform-tools
   - bambu-studio
   - chatgpt
   - choosy
@@ -98,12 +98,14 @@ homebrew_cask_apps:
   - font-inconsolata-nerd-font
   - font-jetbrains-mono-nerd-font
   - font-meslo-lg-nerd-font
+  - font-open-sans
   - font-sauce-code-pro-nerd-font
   - font-sf-mono-nerd-font-ligaturized
   - font-sf-pro
   - font-ubuntu-mono-nerd-font
   - font-ubuntu-nerd-font
   - ghostty
+  - inkscape
   - insomnia
   - ngrok
   - nordvpn
@@ -147,7 +149,6 @@ npm_packages:
   - "@aws-amplify/cli"
   - corepack
   - http-serve
-  - yarn
   - lerna
   - ts-node
 # - name: webpack
