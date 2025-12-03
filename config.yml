@@ -104,6 +104,7 @@ homebrew_cask_apps:
   - font-sf-pro
   - font-ubuntu-mono-nerd-font
   - font-ubuntu-nerd-font
+  - gcloud-cli
   - ghostty
   - inkscape
   - insomnia
