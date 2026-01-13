@@ -58,7 +58,6 @@
       "visual-studio-code"
 
       # Design tools
-      "inkscape"
       "sf-symbols"
 
       # Communication
