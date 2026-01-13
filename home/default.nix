@@ -31,7 +31,6 @@
       # Development
       nodejs_20
       nodePackages.typescript
-      nodePackages.ts-node
     ];
   };
 
