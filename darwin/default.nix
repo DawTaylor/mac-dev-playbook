@@ -21,7 +21,7 @@
     };
 
     optimise = {
-      automatic = true
+      automatic = true;
     };
   };
 
