@@ -27,7 +27,7 @@
       "dockutil"
       "esptool"
       "f3"
-      "gcloud"
+      "gcloud-cli"
       "helm"
       "mas"
       "minikube"
