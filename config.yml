@@ -64,12 +64,16 @@ homebrew_installed_packages:
   - awscli
   - bat
   - circleci
+  - dockutil
+  - esptool
   - eza
   - fd
+  - f3
   - fzf
   - helm
   - jq
   - kubernetes-cli
+  - mas
   - minikube
   - nvm
   - podman
@@ -89,7 +93,10 @@ homebrew_cask_apps:
   - 1password-cli
   - airbuddy
   - android-platform-tools
+  - arduino-ide
+  - assinador-serpro
   - bambu-studio
+  - brave-browser
   - chatgpt
   - choosy
   - db-browser-for-sqlite
@@ -108,6 +115,7 @@ homebrew_cask_apps:
   - ghostty
   - inkscape
   - insomnia
+  - mqtt-explorer
   - ngrok
   - nordvpn
   - notion
