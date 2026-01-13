@@ -11,8 +11,6 @@
   nix = {
     settings = {
       experimental-features = [ "nix-command" "flakes" ];
-      # Automatically optimize the nix store
-      auto-optimise-store = true;
     };
 
     # Garbage collection
@@ -21,6 +19,10 @@
       interval = { Weekday = 0; Hour = 2; Minute = 0; };
       options = "--delete-older-than 30d";
     };
+
+    optimise = {
+      automatic = true
+    }
   };
 
   # Allow unfree packages
@@ -50,6 +52,6 @@
     hostName = "macbook";
   };
 
-  # Security
-  security.pam.enableSudoTouchIdAuth = true;
+  # Security - Touch ID for sudo
+  security.pam.services.sudo_local.touchIdAuth = true;
 }
