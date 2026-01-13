@@ -22,7 +22,7 @@
 
     optimise = {
       automatic = true
-    }
+    };
   };
 
   # Allow unfree packages
