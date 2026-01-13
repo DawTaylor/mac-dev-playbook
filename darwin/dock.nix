@@ -18,6 +18,7 @@
 
     # Persistent folders in dock (right side)
     persistent-others = [
+      "/Applications"
       "/Users/daw/Downloads"
     ];
   };

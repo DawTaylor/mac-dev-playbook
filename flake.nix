@@ -26,7 +26,7 @@
       specialArgs = { inherit inputs username; };
     in
     {
-      darwinConfigurations."macbook" = nix-darwin.lib.darwinSystem {
+      darwinConfigurations."MacBook-Pro-de-Adalberto" = nix-darwin.lib.darwinSystem {
         inherit system specialArgs;
         modules = [
           ./darwin
@@ -43,6 +43,6 @@
       };
 
       # Convenience output for `darwin-rebuild switch --flake .`
-      darwinConfigurations.default = self.darwinConfigurations."macbook";
+      darwinConfigurations.default = self.darwinConfigurations."MacBook-Pro-de-Adalberto";
     };
 }
