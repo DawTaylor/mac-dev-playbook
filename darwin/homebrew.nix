@@ -16,7 +16,6 @@
 
     # Homebrew taps
     taps = [
-      "homebrew/bundle"
     ];
 
     # CLI tools (formulae) - these are installed via Homebrew
@@ -27,7 +26,6 @@
       "dockutil"
       "esptool"
       "f3"
-      "gcloud-cli"
       "helm"
       "mas"
       "minikube"
@@ -51,6 +49,7 @@
       # Development tools
       "arduino-ide"
       "db-browser-for-sqlite"
+      "gcloud-cli"
       "ghostty"
       "insomnia"
       "ngrok"
