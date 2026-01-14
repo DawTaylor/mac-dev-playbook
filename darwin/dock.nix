@@ -7,7 +7,7 @@
   system.defaults.dock = {
     # Items to show in dock (persistent apps)
     persistent-apps = [
-      "/Applications/Safari.app"
+      "/Applications/Vivaldi.app"
       "/Applications/Firefox.app"
       "/Applications/Slack.app"
       "/Applications/Notion.app"

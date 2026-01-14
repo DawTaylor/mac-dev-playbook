@@ -25,6 +25,7 @@
       "circleci"
       "dockutil"
       "esptool"
+      "eza"
       "f3"
       "helm"
       "mas"
