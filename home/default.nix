@@ -6,31 +6,11 @@
     homeDirectory = "/Users/${username}";
     stateVersion = "24.05";
 
-    # Packages installed via Nix (CLI tools that work well with Nix)
+    # Packages installed via Nix
+    # Note: Most CLI tools are installed via Homebrew for simpler PATH management
+    # Only packages that work better with Nix or aren't in Homebrew go here
     packages = with pkgs; [
-      # Core utilities
-      bat           # Better cat
-      eza           # Better ls
-      fd            # Better find
-      fzf           # Fuzzy finder
-      jq            # JSON processor
-      ripgrep       # Better grep
-      tlrc          # tldr client
-
-      # Kubernetes
-      kubectl
-      kubernetes-helm
-
-      # Database
-      sqlite
-
-      # Version control
-      git
-      stow          # Dotfiles management
-
-      # Development
-      nodejs_20
-      nodePackages.typescript
+      stow  # Used by dotfiles activation script
     ];
 
     # Dotfiles activation - copies from nix store and runs stow

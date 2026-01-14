@@ -22,19 +22,25 @@
     # Some of these have Nix equivalents but work better via Homebrew on macOS
     brews = [
       "awscli"
+      "bat"
       "circleci"
       "dockutil"
       "esptool"
       "eza"
       "f3"
+      "fd"
+      "fzf"
       "helm"
+      "jq"
       "mas"
       "minikube"
       "nvm"
       "podman"
       "podman-tui"
       "pyenv"
+      "ripgrep"
       "terraform"
+      "tlrc"
     ];
 
     # GUI applications (casks)

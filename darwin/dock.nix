@@ -4,8 +4,8 @@
   system.defaults.dock = {
     # Keep dock size consistent (don't magnify on hover)
     magnification = false;
-    tilesize = 48;
-    largesize = 48;
+    tilesize = 59;
+    largesize = 59;
 
     # Items to show in dock (persistent apps)
     persistent-apps = [
