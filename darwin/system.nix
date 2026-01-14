@@ -3,13 +3,12 @@
 {
   # macOS system preferences
   system.defaults = {
-    # Dock settings
+    # Dock settings (apps configured in dock.nix)
     dock = {
       autohide = true;
       show-recents = false;
       launchanim = true;
       orientation = "bottom";
-      tilesize = 48;
       minimize-to-application = true;
       mru-spaces = false;
     };
