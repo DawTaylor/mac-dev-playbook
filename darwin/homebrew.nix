@@ -43,7 +43,7 @@
       "1password-cli"
 
       # Browsers
-      "brave-browser"
+      "vivaldi"
       "firefox"
 
       # Development tools
