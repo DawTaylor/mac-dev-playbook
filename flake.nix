@@ -22,33 +22,60 @@
 
   outputs = inputs@{ self, nixpkgs, nix-darwin, home-manager, dotfiles }:
     let
-      # Change this to your username
+      # Shared configuration
       username = "daw";
 
-      # System configuration
-      system = "aarch64-darwin"; # Use "x86_64-darwin" for Intel Macs
+      # Helper function to create a darwin system configuration
+      mkDarwinSystem = { hostname, system ? "aarch64-darwin" }:
+        let
+          specialArgs = { inherit inputs username hostname; };
+        in
+        nix-darwin.lib.darwinSystem {
+          inherit system specialArgs;
+          modules = [
+            ./darwin
+            home-manager.darwinModules.home-manager
+            {
+              # Set hostname for this machine
+              networking.hostName = hostname;
+              networking.computerName = hostname;
 
-      specialArgs = { inherit inputs username; };
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                extraSpecialArgs = specialArgs;
+                backupFileExtension = "backup";
+                users.${username} = import ./home;
+              };
+            }
+          ];
+        };
+
+      # Define your machines here
+      machines = {
+        # Personal MacBook (M-series)
+        "MacBook-Pro-de-Adalberto" = {
+          hostname = "MacBook-Pro-de-Adalberto";
+          system = "aarch64-darwin";
+        };
+
+        # Work MacBook (M-series) - update hostname to match your second Mac
+        "MacBook-Work" = {
+          hostname = "MacBook-Work";
+          system = "aarch64-darwin";
+        };
+
+        # Example: Intel Mac
+        # "MacBook-Intel" = {
+        #   hostname = "MacBook-Intel";
+        #   system = "x86_64-darwin";
+        # };
+      };
     in
     {
-      darwinConfigurations."MacBook-Pro-de-Adalberto" = nix-darwin.lib.darwinSystem {
-        inherit system specialArgs;
-        modules = [
-          ./darwin
-          home-manager.darwinModules.home-manager
-          {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              extraSpecialArgs = specialArgs;
-              backupFileExtension = "backup";
-              users.${username} = import ./home;
-            };
-          }
-        ];
-      };
-
-      # Convenience output for `darwin-rebuild switch --flake .`
-      darwinConfigurations.default = self.darwinConfigurations."MacBook-Pro-de-Adalberto";
+      # Generate darwinConfigurations for each machine
+      darwinConfigurations = builtins.mapAttrs
+        (name: config: mkDarwinSystem config)
+        machines;
     };
 }

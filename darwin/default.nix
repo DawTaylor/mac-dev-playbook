@@ -1,4 +1,4 @@
-{ pkgs, username, ... }:
+{ pkgs, lib, username, hostname, ... }:
 
 {
   imports = [
@@ -35,7 +35,8 @@
   system.stateVersion = 5;
 
   # The platform the configuration will be used on
-  nixpkgs.hostPlatform = "aarch64-darwin";
+  # This is set dynamically based on the machine config in flake.nix
+  # nixpkgs.hostPlatform is inherited from the system parameter
 
   # User configuration
   users.users.${username} = {
@@ -46,11 +47,7 @@
   # Set the primary user for nix-darwin
   system.primaryUser = username;
 
-  # Networking
-  networking = {
-    computerName = "macbook";
-    hostName = "macbook";
-  };
+  # Networking - hostName and computerName are set per-machine in flake.nix
 
   # Security - Touch ID for sudo
   security.pam.services.sudo_local.touchIdAuth = true;
