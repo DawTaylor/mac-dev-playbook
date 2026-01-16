@@ -39,6 +39,7 @@
       "podman-tui"
       "pyenv"
       "ripgrep"
+      "vercel-cli"
       "terraform"
       "tlrc"
     ];
@@ -69,6 +70,7 @@
 
       # Communication
       "chatgpt"
+      "claude"
       "notion"
       "slack"
       "telegram"
