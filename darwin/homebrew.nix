@@ -30,6 +30,7 @@
       "f3"
       "fd"
       "fzf"
+      "gh"
       "helm"
       "jq"
       "mas"
@@ -55,10 +56,13 @@
       "firefox"
 
       # Development tools
+      "android-studio"
       "arduino-ide"
+      "auto-claude"
       "db-browser-for-sqlite"
       "gcloud-cli"
       "ghostty"
+      "github"
       "insomnia"
       "ngrok"
       "pgadmin4"
@@ -70,6 +74,7 @@
 
       # Communication
       "chatgpt"
+      "claude-code"
       "claude"
       "notion"
       "slack"
@@ -80,6 +85,7 @@
       "airbuddy"
       "android-platform-tools"
       "choosy"
+      "hammerspoon"
       "mqtt-explorer"
       "nordvpn"
       "pocket-casts"
