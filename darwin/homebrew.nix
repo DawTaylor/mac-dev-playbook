@@ -33,74 +33,37 @@
       "gh"
       "helm"
       "jq"
+      "kubernetes-cli"
       "mas"
       "minikube"
       "nvm"
       "podman"
+      "podman-compose"
       "podman-tui"
       "pyenv"
       "ripgrep"
-      "vercel-cli"
       "terraform"
       "tlrc"
+      "vercel-cli"
     ];
 
     # GUI applications (casks)
     casks = [
-      # Password management
       "1password"
       "1password-cli"
-
-      # Browsers
-      "vivaldi"
-      "firefox"
-
-      # Development tools
-      "android-studio"
-      "arduino-ide"
-      "auto-claude"
-      "db-browser-for-sqlite"
-      "gcloud-cli"
-      "ghostty"
-      "github"
-      "insomnia"
-      "ngrok"
-      "pgadmin4"
-      "postman"
-      "visual-studio-code"
-
-      # Design tools
-      "sf-symbols"
-
-      # Communication
-      "chatgpt"
-      "claude-code"
-      "claude"
-      "notion"
-      "slack"
-      "telegram"
-      "whatsapp"
-
-      # Utilities
       "airbuddy"
       "android-platform-tools"
-      "choosy"
-      "hammerspoon"
-      "mqtt-explorer"
-      "nordvpn"
-      "pocket-casts"
-      "steermouse"
-      "tg-pro"
-      "yubico-authenticator"
-
-      # Regional/specific apps
+      "android-studio"
+      "arduino-ide"
       "assinador-serpro"
+      "auto-claude"
       "bambu-studio"
-
-      # Java
-      "temurin@19"
-
-      # Fonts
+      "chatgpt"
+      "choosy"
+      "claude"
+      "claude-code"
+      "db-browser-for-sqlite"
+      "firefox"
       "font-hack-nerd-font"
       "font-inconsolata-nerd-font"
       "font-jetbrains-mono-nerd-font"
@@ -111,6 +74,28 @@
       "font-sf-pro"
       "font-ubuntu-mono-nerd-font"
       "font-ubuntu-nerd-font"
+      "gcloud-cli"
+      "ghostty"
+      "github"
+      "hammerspoon"
+      "insomnia"
+      "mqtt-explorer"
+      "ngrok"
+      "nordvpn"
+      "notion"
+      "pgadmin4"
+      "pocket-casts"
+      "postman"
+      "sf-symbols"
+      "slack"
+      "steermouse"
+      "telegram"
+      "temurin@19"
+      "tg-pro"
+      "vivaldi"
+      "visual-studio-code"
+      "whatsapp"
+      "yubico-authenticator"
     ];
 
     # Mac App Store apps (requires mas to be installed)
