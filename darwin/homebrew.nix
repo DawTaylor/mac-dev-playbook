@@ -45,7 +45,6 @@
       "ripgrep"
       "terraform"
       "tlrc"
-      "vercel-cli"
     ];
 
     # GUI applications (casks)
@@ -97,6 +96,7 @@
       "visual-studio-code"
       "whatsapp"
       "yubico-authenticator"
+      "zen"
     ];
 
     # Mac App Store apps (requires mas to be installed)

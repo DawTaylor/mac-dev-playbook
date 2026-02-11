@@ -4,6 +4,7 @@
   imports = [
     ./homebrew.nix
     ./dock.nix
+    ./npm.nix
     ./system.nix
   ];
 
