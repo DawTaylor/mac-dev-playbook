@@ -9,7 +9,7 @@
 
     # Items to show in dock (persistent apps)
     persistent-apps = [
-      "/Applications/Vivaldi.app"
+      "/Applications/Zen.app"
       "/Applications/Firefox.app"
       "/Applications/Slack.app"
       "/Applications/Notion.app"
