@@ -93,6 +93,7 @@
       "telegram"
       "temurin@19"
       "tg-pro"
+      "unifi-identity-endpoint"
       "visual-studio-code"
       "whatsapp"
       "yubico-authenticator"
