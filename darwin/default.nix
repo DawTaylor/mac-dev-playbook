@@ -32,6 +32,13 @@
   # Create /etc/zshrc that loads the nix-darwin environment
   programs.zsh.enable = true;
 
+  # Ensure Nix is in PATH for all zsh instances (including non-interactive/GUI)
+  environment.etc."zshenv.local".text = ''
+    if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+      . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+    fi
+  '';
+
   # Used for backwards compatibility
   system.stateVersion = 5;
 
