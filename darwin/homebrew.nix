@@ -63,6 +63,8 @@
       "choosy"
       "claude"
       "claude-code"
+      "codex"
+      "codex-app"
       "db-browser-for-sqlite"
       "firefox"
       "font-hack-nerd-font"
