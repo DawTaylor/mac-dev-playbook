@@ -105,7 +105,6 @@
       "vlc"
       "whatsapp"
       "yubico-authenticator"
-      "zen"
     ];
 
     # Mac App Store apps (requires mas to be installed)
