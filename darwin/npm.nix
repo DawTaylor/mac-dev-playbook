@@ -3,7 +3,6 @@
 let
   # Global npm packages to install
   npmPackages = [
-    "@aws-amplify/cli"
     "@github/copilot"
     "@tuyapi/cli"
     "http-serve"

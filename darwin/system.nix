@@ -9,22 +9,22 @@
       show-recents = false;
       launchanim = true;
       orientation = "bottom";
-      minimize-to-application = true;
+      minimize-to-application = false;
       mru-spaces = false;
     };
 
     # Finder settings
     finder = {
-      AppleShowAllExtensions = true;
-      ShowPathbar = true;
-      ShowStatusBar = true;
+      AppleShowAllExtensions = false;
+      ShowPathbar = false;
+      ShowStatusBar = false;
       FXEnableExtensionChangeWarning = false;
       FXPreferredViewStyle = "Nlsv";
     };
 
     # Global settings
     NSGlobalDomain = {
-      AppleShowAllExtensions = true;
+      AppleShowAllExtensions = false;
       ApplePressAndHoldEnabled = false;
       KeyRepeat = 2;
       InitialKeyRepeat = 15;
@@ -36,7 +36,7 @@
 
     # Trackpad settings
     trackpad = {
-      Clicking = true;
+      Clicking = false;
       TrackpadRightClick = true;
     };
 

@@ -59,4 +59,17 @@
 
   # Security - Touch ID for sudo
   security.pam.services.sudo_local.touchIdAuth = true;
+
+  # Mount the Nix Store APFS volume at boot (FileVault encrypts at container level,
+  # so no passphrase needed — plain mount suffices once the system is unlocked)
+  launchd.daemons.nix-store-mount = {
+    serviceConfig = {
+      Label = "org.nixos.darwin-store-mount";
+      RunAtLoad = true;
+      ProgramArguments = [
+        "/bin/sh" "-c"
+        "/usr/sbin/diskutil mount -mountPoint /nix 5F598E6D-98B2-4ED1-89D6-C8F17919AAAB"
+      ];
+    };
+  };
 }
