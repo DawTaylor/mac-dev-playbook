@@ -59,7 +59,6 @@
       "font-sf-mono-nerd-font-ligaturized"
       "font-sf-pro"
       "gcloud-cli"
-      "ghostty"
       "github"
       "mqttx"
       "nordvpn"
