@@ -71,6 +71,7 @@
       "telegram"
       "unifi-identity-endpoint"
       "visual-studio-code"
+      "warp"
       "whatsapp"
       "yubico-authenticator"
     ];
