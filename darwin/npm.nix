@@ -6,7 +6,6 @@ let
     "@github/copilot"
     "@tuyapi/cli"
     "http-serve"
-    "lerna"
     "ts-node"
     "vercel"
   ];
