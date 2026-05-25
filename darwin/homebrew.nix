@@ -81,6 +81,7 @@
       "Magnet" = 441258766;
       "1Password for Safari" = 1569813296;
       "The Unarchiver" = 425424353;
+      "Home Assistant" = 1099568401;
     };
   };
 }

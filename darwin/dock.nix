@@ -14,6 +14,7 @@
       "/Applications/Notion.app"
       "/Applications/Warp.app"
       "/Applications/Visual Studio Code.app"
+      "/Applications/Home Assistant.app"
       "/System/Applications/System Settings.app"
     ];
 
