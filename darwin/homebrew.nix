@@ -54,7 +54,6 @@
       "arduino-ide"
       "bambu-studio"
       "chatgpt"
-      "cinebench"
       "claude-code"
       "font-sf-mono-nerd-font-ligaturized"
       "font-sf-pro"
@@ -64,10 +63,10 @@
       "nordvpn"
       "notion"
       "pocket-casts"
-      "postman"
       "sf-symbols"
       "slack"
       "telegram"
+      "ungoogled-chromium"
       "unifi-identity-endpoint"
       "visual-studio-code"
       "warp"
@@ -81,7 +80,6 @@
       "Magnet" = 441258766;
       "1Password for Safari" = 1569813296;
       "The Unarchiver" = 425424353;
-      "Home Assistant" = 1099568401;
     };
   };
 }
