@@ -8,6 +8,7 @@ let
     "http-serve"
     "ts-node"
     "vercel"
+    "wscat"
   ];
 
   packageList = builtins.concatStringsSep " " npmPackages;

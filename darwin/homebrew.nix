@@ -12,10 +12,13 @@
       # "zap" removes unlisted casks/formulae, "uninstall" only removes managed ones
       # Use "none" to be conservative, "uninstall" for managed cleanup
       cleanup = "uninstall";
+      extraFlags = [ "--force-cleanup" ];
     };
 
     # Homebrew taps
     taps = [
+      "fluxcd/tap"
+      "siderolabs/tap"
     ];
 
     # CLI tools (formulae) - these are installed via Homebrew
@@ -23,24 +26,30 @@
     brews = [
       "awscli"
       "bat"
+      "cloudflared"
       "dockutil"
       "esptool"
       "eza"
       "f3"
       "fd"
+      "flux"
       "fzf"
       "gh"
       "helm"
       "jq"
       "kubernetes-cli"
+      "kustomize"
       "mas"
       "minikube"
       "nvm"
       "ollama"
+      "python"
       "podman"
       "podman-compose"
       "podman-tui"
       "ripgrep"
+      "tailscale"
+      "talosctl"
       "terraform"
       "tlrc"
     ];
@@ -51,21 +60,27 @@
       "1password-cli"
       "affinity"
       "airbuddy"
+      "android-platform-tools"
       "arduino-ide"
-      "bambu-studio"
+      "balenaetcher"
       "chatgpt"
+      "claude"
       "claude-code"
+      "firefox"
       "font-sf-mono-nerd-font-ligaturized"
       "font-sf-pro"
       "gcloud-cli"
-      "github"
+      "logi-options+"
+      "mactracker"
       "mqttx"
       "nordvpn"
       "notion"
       "pocket-casts"
+      "sequel-ace"
       "sf-symbols"
       "slack"
       "telegram"
+      "temurin@17"
       "ungoogled-chromium"
       "unifi-identity-endpoint"
       "visual-studio-code"
