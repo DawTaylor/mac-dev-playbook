@@ -84,6 +84,7 @@
       "ungoogled-chromium"
       "unifi-identity-endpoint"
       "visual-studio-code"
+      "vlc"
       "warp"
       "whatsapp"
       "yubico-authenticator"

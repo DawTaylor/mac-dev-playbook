@@ -9,7 +9,8 @@
 
     # Items to show in dock (persistent apps)
     persistent-apps = [
-      "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+      # "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+      "/Applications/Firefox.app"
       "/Applications/Slack.app"
       "/Applications/Notion.app"
       "/Applications/Warp.app"
