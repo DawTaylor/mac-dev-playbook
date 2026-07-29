@@ -28,6 +28,9 @@
       tags: ["dock"]
 
   tasks:
+    - import_tasks: tasks/brew-cleanup.yml
+      when: homebrew_use_brewfile
+      tags: ["homebrew"]
     - import_tasks: tasks/sudoers.yml
       when: configure_sudoers
       tags: ["sudoers"]

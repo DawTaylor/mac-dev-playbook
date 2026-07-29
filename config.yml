@@ -62,84 +62,16 @@ dotfiles_repo_version: master
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/dotfiles
 
-homebrew_installed_packages:
-  - awscli
-  - bat
-  - cloudflared
-  - dockutil
-  - esptool
-  - eza
-  - f3
-  - fd
-  - flux
-  - fzf
-  - gh
-  - helm
-  - jq
-  - kubernetes-cli
-  - kustomize
-  - mas
-  - minikube
-  - nvm
-  - ollama
-  - python
-  - podman
-  - podman-compose
-  - podman-tui
-  - ripgrep
-  # Replaces the stow package previously provided by Home Manager.
-  - stow
-  - tailscale
-  - talosctl
-  - terraform
-  - tlrc
-
-homebrew_uninstalled_packages: []
-
-homebrew_taps:
-  - fluxcd/tap
-  - siderolabs/tap
-
+homebrew_brewfile_dir: "~/.config/brew"
 homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
-  - 1password
-  - 1password-cli
-  - affinity
-  - airbuddy
-  - android-platform-tools
-  - antigravity
-  - arduino-ide
-  - balenaetcher
-  - chatgpt
-  - claude
-  - claude-code
-  - firefox
-  - font-sf-mono-nerd-font-ligaturized
-  - font-sf-pro
-  - gcloud-cli
-  - logi-options-plus
-  - mactracker
-  - mqttx
-  - nordvpn
-  - notion
-  - numi
-  - pocket-casts
-  - sequel-ace
-  - sf-symbols
-  - slack
-  - telegram
-  - temurin@17
-  - ungoogled-chromium
-  - unifi-identity-endpoint
-  - visual-studio-code
-  - vlc
-  - wezterm
-  - whatsapp
-  - yubico-authenticator
 
+homebrew_upgrade_all_packages: true
+homebrew_installed_packages: []
+homebrew_uninstalled_packages: []
+homebrew_taps: []
+homebrew_cask_apps: []
 homebrew_cask_uninstalled_apps: []
 
-homebrew_upgrade_all_packages: false
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:

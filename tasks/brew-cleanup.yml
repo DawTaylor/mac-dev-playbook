@@ -1,0 +1,6 @@
+---
+  - name: Cleanup homebrew after install.
+    command: "{{ homebrew_brew_bin_path }}/brew bundle cleanup --casks --formulae --taps --force"
+    args:
+      chdir: "{{ homebrew_brewfile_dir }}"
+    when: homebrew_brewfile.stat.exists and homebrew_use_brewfile
