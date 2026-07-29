@@ -17,6 +17,7 @@ dockitems_persist: []
 
 configure_sudoers: false
 sudoers_custom_config: ""
+configure_touch_id_sudo: false
 # Example:
 # sudoers_custom_config: |
 #   # Allow users in admin group to use sudo with no password.

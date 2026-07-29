@@ -1,0 +1,12 @@
+---
+- name: Enable Touch ID authentication for sudo.
+  copy:
+    content: |
+      # Local sudo PAM configuration. This file is preserved across macOS updates.
+      auth       sufficient     pam_tid.so
+    dest: /etc/pam.d/sudo_local
+    owner: root
+    group: wheel
+    mode: '0644'
+    backup: true
+  become: true

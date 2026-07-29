@@ -18,6 +18,15 @@
     PATH: "{{ ansible_env.HOME }}/Development/tools/n/bin:{{ ansible_env.PATH }}"
   loop: "{{ npm_packages }}"
 
+- name: Remove global NPM packages no longer in the declared inventory.
+  npm:
+    name: "{{ item }}"
+    state: absent
+    global: true
+  environment:
+    PATH: "{{ ansible_env.HOME }}/Development/tools/n/bin:{{ ansible_env.PATH }}"
+  loop: "{{ npm_uninstalled_packages }}"
+
 - name: Install global Pip packages.
   pip:
     name: "{{ item.name | default(item) }}"

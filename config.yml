@@ -1,13 +1,16 @@
 ---
 configure_dotfiles: true
 configure_terminal: false
-configure_osx: true
+# The legacy ~/.osx script is user-managed and outside this repository's
+# declared state, so do not run it as part of provisioning.
+configure_osx: false
 
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: true
 dockutil_install: true
 dockitems_remove:
   - Apps
+  - Safari
   - Telefone
   - Jogos
   - "Assistente de Feedback"
@@ -27,29 +30,28 @@ dockitems_remove:
   - "App Store"
   - "Espelhamento do iPhone"
 dockitems_persist:
-  - name: Safari
-    path: "/Applications/Safari.app"
-    pos: 1
   - name: Firefox
     path: "/Applications/Firefox.app/"
-    pos: 2
+    pos: 1
   - name: Slack
     path: "/Applications/Slack.app/"
-    pos: 3
+    pos: 2
   - name: Notion
     path: "/Applications/Notion.app/"
+    pos: 3
+  - name: WezTerm
+    path: "/Applications/WezTerm.app/"
     pos: 4
-  - name: "Ghostty"
-    path: "/Applications/Ghostty.app/"
-    pos: 5
   - name: "VS Code"
     path: "/Applications/Visual Studio Code.app/"
-    pos: 6
+    pos: 5
   - name: "Ajustes do Sistema"
     path: "/System/Applications/System%20Settings.app"
-    pos: 999
+    pos: 6
 configure_sudoers: false
 sudoers_custom_config: ''
+# Match nix-darwin's security.pam.services.sudo_local.touchIdAuth setting.
+configure_touch_id_sudo: true
 # Example:
 # sudoers_custom_config: |
 #   # Allow users in admin group to use sudo with no password.
@@ -63,80 +65,89 @@ dotfiles_repo_local_destination: ~/dotfiles
 homebrew_installed_packages:
   - awscli
   - bat
-  - circleci
+  - cloudflared
   - dockutil
   - esptool
   - eza
-  - fd
   - f3
+  - fd
+  - flux
   - fzf
+  - gh
   - helm
   - jq
   - kubernetes-cli
+  - kustomize
   - mas
   - minikube
   - nvm
+  - ollama
+  - python
   - podman
+  - podman-compose
   - podman-tui
-  - pyenv
-  - sqlite
+  - ripgrep
+  # Replaces the stow package previously provided by Home Manager.
   - stow
+  - tailscale
+  - talosctl
   - terraform
   - tlrc
 
-homebrew_taps: []
+homebrew_uninstalled_packages: []
+
+homebrew_taps:
+  - fluxcd/tap
+  - siderolabs/tap
 
 homebrew_cask_appdir: /Applications
-homebrew_uninstalled_cask_apps: []
 homebrew_cask_apps:
   - 1password
   - 1password-cli
+  - affinity
   - airbuddy
   - android-platform-tools
+  - antigravity
   - arduino-ide
-  - assinador-serpro
-  - bambu-studio
-  - brave-browser
+  - balenaetcher
   - chatgpt
-  - choosy
-  - db-browser-for-sqlite
+  - claude
+  - claude-code
   - firefox
-  - font-hack-nerd-font
-  - font-inconsolata-nerd-font
-  - font-jetbrains-mono-nerd-font
-  - font-meslo-lg-nerd-font
-  - font-open-sans
-  - font-sauce-code-pro-nerd-font
   - font-sf-mono-nerd-font-ligaturized
   - font-sf-pro
-  - font-ubuntu-mono-nerd-font
-  - font-ubuntu-nerd-font
   - gcloud-cli
-  - ghostty
-  - inkscape
-  - insomnia
-  - mqtt-explorer
-  - ngrok
+  - logi-options-plus
+  - mactracker
+  - mqttx
   - nordvpn
   - notion
-  - pgadmin4
+  - numi
   - pocket-casts
-  - postman
+  - sequel-ace
   - sf-symbols
   - slack
-  - steermouse
   - telegram
-  - temurin@19
-  - tg-pro
+  - temurin@17
+  - ungoogled-chromium
+  - unifi-identity-endpoint
   - visual-studio-code
+  - vlc
+  - wezterm
   - whatsapp
   - yubico-authenticator
+
+homebrew_cask_uninstalled_apps: []
+
+homebrew_upgrade_all_packages: false
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
   - { id: 1191449274, name: "Tooth Fairy" }
   - { id: 441258766, name: "Magnet" }
   - { id: 1569813296, name: "1Password for Safari" }
+  - { id: 425424353, name: "The Unarchiver" }
+mas_uninstalled_apps: []
 mas_email: ""
 mas_password: ""
 mas_upgrade_all_apps: true
@@ -155,11 +166,13 @@ gem_packages: []
 #   state: present # present/absent/latest, default: present
 #   version: "~> 1.15.1" # default: N/A
 npm_packages:
-  - "@aws-amplify/cli"
-  - corepack
+  - "@github/copilot"
+  - "@tuyapi/cli"
   - http-serve
-  - lerna
   - ts-node
+  - vercel
+  - wscat
+npm_uninstalled_packages: []
 # - name: webpack
 #   state: present # present/absent/latest, default: present
 #   version: "^2.6" # default: N/A

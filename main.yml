@@ -32,6 +32,10 @@
       when: configure_sudoers
       tags: ["sudoers"]
 
+    - import_tasks: tasks/touch-id-sudo.yml
+      when: configure_touch_id_sudo
+      tags: ["touch-id-sudo"]
+
     - import_tasks: tasks/terminal.yml
       when: configure_terminal
       tags: ["terminal"]
