@@ -42,11 +42,11 @@ dockitems_persist:
   - name: WezTerm
     path: "/Applications/WezTerm.app/"
     pos: 4
-  - name: "VS Code"
+  - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app/"
     pos: 5
-  - name: "Ajustes do Sistema"
-    path: "/System/Applications/System%20Settings.app"
+  - name: "Ajustes"
+    path: "/System/Applications/System Settings.app"
     pos: 6
 configure_sudoers: false
 sudoers_custom_config: ''
